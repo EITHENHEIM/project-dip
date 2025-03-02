@@ -33,7 +33,7 @@ const RootLayout = async ({
                 />
                 <Script
                     src='https://cloud.umami.is/script.js'
-                    data-website-id='(f571d2f3-83a5-4fd3-9fc9-83fa549478dc)'
+                    data-website-id='f571d2f3-83a5-4fd3-9fc9-83fa549478dc'
                     strategy='beforeInteractive'
                 />
 
