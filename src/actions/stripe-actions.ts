@@ -49,7 +49,7 @@ export const createCheckoutSession = async (cartId: string) => {
                     type: 'fixed_amount',
                     fixed_amount: {
                         currency: 'kzt',
-                        amount: totalPrice >= 15 ? 0 : 5 * 100 // $5.00 USD
+                        amount: totalPrice >= 15 ? 0 : 1500 * 100 // 1500 тенге в тыйынах
                     },
                     display_name: totalPrice >= 15 ? 'Free Shipping' : 'Shipping',
                     delivery_estimate: {
