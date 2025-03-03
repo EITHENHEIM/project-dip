@@ -41,7 +41,7 @@ export const createCheckoutSession = async (cartId: string) => {
             userId: user?.id?.toString() || '-'
         },
         shipping_address_collection: {
-            allowed_countries: ['US']
+            allowed_countries: ['US','KZ','RU']
         },
         shipping_options: [
             {
