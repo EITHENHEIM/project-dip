@@ -114,7 +114,7 @@ export async function POST(req: Request) {
                         email: order.customerEmail || '-',
                         orderId: order.orderNumber,
                         orderTotal: order.totalPrice,
-                        orderCurrency: 'USD',
+                        orderCurrency: 'KZT',
                     });
                 } catch(e) {
                     console.log("Umami tracking error");

@@ -24,7 +24,7 @@ export const createCheckoutSession = async (cartId: string) => {
         mode: 'payment',
         line_items: cart.items.map((item) => ({
             price_data: {
-                currency: 'usd',
+                currency: 'kzt',
                 product_data: {
                     name: item.title,
                     images: [item.image]
@@ -48,7 +48,7 @@ export const createCheckoutSession = async (cartId: string) => {
                 shipping_rate_data: {
                     type: 'fixed_amount',
                     fixed_amount: {
-                        currency: 'usd',
+                        currency: 'kzt',
                         amount: totalPrice >= 15 ? 0 : 5 * 100 // $5.00 USD
                     },
                     display_name: totalPrice >= 15 ? 'Free Shipping' : 'Shipping',

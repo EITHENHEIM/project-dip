@@ -39,7 +39,7 @@ const CheckoutSuccessPage = async ({ searchParams }: { searchParams: Promise<{ s
                     <div className='text-sm text-gray-500'>
                         Order total: {new Intl.NumberFormat('en-US', {
                             style: 'currency',
-                            currency: session.currency || 'USD',
+                            currency: session.currency || 'KZT',
                         }).format((session.amount_total || 0) / 100)}
                     </div>
                     <div className='text-sm text-gray-500'>Order email: {session.customer_details?.email}</div>

@@ -47,7 +47,7 @@ const AddToCartButton = ({ product }: AddToCartButtonProps) => {
                     productId: product._id,
                     productName: product.title,
                     price: product.price,
-                    currency: 'USD',
+                    currency: 'KZT',
                 })
             }
         } catch(e) {}

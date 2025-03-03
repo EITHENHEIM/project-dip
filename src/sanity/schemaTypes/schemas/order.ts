@@ -114,7 +114,7 @@ export const order = defineType({
         }),
         defineField({
             name: 'totalPrice',
-            title: 'Total Price (USD)',
+            title: 'Total Price (KZT)',
             type: 'number',
         }),
         defineField({

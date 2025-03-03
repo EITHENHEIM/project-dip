@@ -201,7 +201,7 @@
       {
         "name": "totalPrice",
         "type": "number",
-        "title": "Total Price (USD)"
+        "title": "Total Price (KZT)"
       },
       {
         "name": "shippingAddress",

@@ -117,7 +117,7 @@ const Cart = () => {
                 anyWindow.umami.track('proceed_to_checkout', {
                     cartId: cartId,
                     totalPrice: getTotalPrice(),
-                    currency: 'USD',
+                    currency: 'KZT',
                 })
             }
         } catch(e) {}
