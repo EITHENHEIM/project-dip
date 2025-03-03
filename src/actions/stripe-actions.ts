@@ -29,7 +29,7 @@ export const createCheckoutSession = async (cartId: string) => {
                     name: item.title,
                     images: [item.image]
                 },
-                unit_amount: Math.round(item.price * 10)
+                unit_amount: Math.round(item.price * 100)
             },
             quantity: item.quantity,
         })),
