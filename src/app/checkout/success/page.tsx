@@ -32,17 +32,17 @@ const CheckoutSuccessPage = async ({ searchParams }: { searchParams: Promise<{ s
                             <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M5 13l4 4L19 7' />
                         </svg>
                     </div>
-                    <h1 className='text-2xl font-bold text-gray-900 mb-2'>Thank you for your order!</h1>
+                    <h1 className='text-2xl font-bold text-gray-900 mb-2'>Тапсырысыңыз үшін рақмет!</h1>
                     <p className='text-gray-600 mb-6'>
-                        We have received your order, and will send you a confirmation email shortly!
+                    Тапсырысыңыз сәтті рәсімделді!
                     </p>
                     <div className='text-sm text-gray-500'>
-                        Order total: {new Intl.NumberFormat('en-US', {
+                    Жалпы сома: {new Intl.NumberFormat('en-US', {
                             style: 'currency',
                             currency: session.currency || 'KZT',
                         }).format((session.amount_total || 0) / 100)}
                     </div>
-                    <div className='text-sm text-gray-500'>Order email: {session.customer_details?.email}</div>
+                    <div className='text-sm text-gray-500'>Тапсырыс почтасы:{session.customer_details?.email}</div>
                 </div>
             </div>
         </div>
