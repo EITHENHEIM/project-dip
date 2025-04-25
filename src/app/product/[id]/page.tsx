@@ -13,7 +13,7 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
     const product = await getProductById(id);
 
     if(!product.price) {
-        return <div>Product not found</div>;
+        return <div>Товар табылмады</div>;
     }
 
     const originalPrice = product.price * 5;
@@ -31,7 +31,7 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
                         className='text-gray-600 hover:text-red-600 transition-colors flex items-center gap-1'
                     >
                         <Home className='w-4 h-4' />
-                        <span>Home</span>
+                        <span>Басты бет</span>
                     </Link>
                     <ChevronRight className='w-4 h-4 text-gray-400' />
                     <span className='text-gray-400 truncate'>
@@ -45,14 +45,14 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
         <div className='bg-gradient-to-r from-red-500/10 to-red-600/10 py-6 px-4'>
             <div className='container mx-auto'>
                 <h1 className='text-2xl md:text-4xl font-bold text-center text-red-600 mb-3'>
-                🔥 FLASH SALE - 80% OFF 🔥
+                🔥 ЖЕҢІЛДІК – 80% 🔥
                 </h1>
                 <div className='flex flex-col items-center gap-2'>
                     <p className='text-center text-red-500 text-sm md:text-base font-semibold animate-pulse'>
-                        ⚡️ Only {Math.floor(Math.random() * 10) + 1} items left at this price!
+                        ⚡️ Бұл бағада тек {Math.floor(Math.random() * 10) + 1} дана қалды!
                     </p>
                     <div className='bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm'>
-                        ⏰ Offer ends soon!
+                        ⏰ Ұсыныс жақын арада аяқталады!
                     </div>
                 </div>
             </div>
@@ -64,15 +64,15 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
                 <div className='flex flex-wrap items-center justify-center gap-6 text-sm'>
                     <div className='flex items-center gap-2'>
                         <span className='text-yellow-600 text-xl'>🚚</span>
-                        <span className='font-medium'>Free Express Shipping</span>
+                        <span className='font-medium'>Тегін экспресс жеткізу</span>
                     </div>
                     <div className='flex items-center gap-2'>
                         <span className='text-yellow-600 text-xl'>✨</span>
-                        <span className='font-medium'>Satisfaction Guaranteed</span>
+                        <span className='font-medium'>Сапаға кепілдік</span>
                     </div>
                     <div className='flex items-center gap-2'>
                         <span className='text-yellow-600 text-xl'>🔒</span>
-                        <span className='font-medium'>Secure Checkout</span>
+                        <span className='font-medium'>Қауіпсіз төлем</span>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
                     <div className='flex flex-col gap-2 mt-4'>
                         <div className='flex items-center gap-3'>
                             <div className='flex items-baseline gap-1'>
-                                <span className='text-xs font-bold text-red-600'>US</span>
+                                <span className='text-xs font-bold text-red-600'>₸</span>
                                 <span className='text-5xl font-black text-red-600 tracking-tight'>
                                     {formatPrice(product.price).replace('$', '')}
                                 </span>
@@ -123,7 +123,7 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
                                         -80%
                                     </span>
                                     <span className='text-red-600 font-bold text-sm'>
-                                        MEGA SAVINGS
+                                    ҮЛКЕН ЖЕҢІЛДІК
                                     </span>
                                 </div>
                             </div>
@@ -132,23 +132,23 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
                         <div className='flex items-center gap-2 bg-red-50 p-2 rounded-lg'>
                             <span className='text-red-600 font-bold'>💰</span>
                             <span className='text-red-600 font-medium text-sm'>
-                                You save {formatPrice(originalPrice - product.price)}!
+                            Сіз {formatPrice(originalPrice - product.price)} үнемдейсіз!
                             </span>
                         </div>
 
                         <div className='flex items-center gap-2 text-xs text-gray-600'>
                             <span className='inline-block w-2 h-2 bg-green-500 rounded-full animate-pulse'></span>
-                            <span>{Math.floor(Math.random() * 50) + 20} people bought in the last hour</span>
+                            <span>Соңғы сағатта {Math.floor(Math.random() * 50) + 20} адам сатып алды</span>
                         </div>
                     </div>
 
                     <div className='bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 p-4 rounded-xl mt-4'>
                         <div className='flex items-center gap-2 text-yellow-800'>
                             <span className='text-xl'>⚡️</span>
-                            <span className='font-bold'>Limited Time Offer!</span>
+                            <span className='font-bold'>Уақыт шектеулі ұсыныс!</span>
                         </div>
                         <div className='text-sm text-yellow-700 mt-1 font-medium'>
-                            Order now before price changes!
+                            Баға өзгермей тұрып тапсырыс беріңіз!
                         </div>
                     </div>
 
@@ -157,15 +157,15 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
                     <div className='flex flex-col gap-3 mt-6 text-sm bg-white p-4 rounded-xl shadow-sm border border-gray-100'>
                         <div className='flex items-center gap-3 text-gray-700'>
                             <span className='bg-green-100 p-2 rounded-full'>✅</span>
-                            <span className='font-medium'>In stock - Ships within 24 hours</span>
+                            <span className='font-medium'>Қоймада бар – 24 сағат ішінде жіберіледі</span>
                         </div>
                         <div className='flex items-center gap-3 text-gray-700'>
                             <span className='bg-green-100 p-2 rounded-full'>🔄</span>
-                            <span className='font-medium'>30-day money-back guarantee</span>
+                            <span className='font-medium'>30 күн ішінде ақшаны қайтару кепілдігі</span>
                         </div>
                         <div className='flex items-center gap-3 text-gray-700'>
                             <span className='bg-green-100 p-2 rounded-full'>🛡️</span>
-                            <span className='font-medium'>Secure payment processing</span>
+                            <span className='font-medium'>Қауіпсіз төлем өңдеу</span>
                         </div>
                     </div>
                 </div>
