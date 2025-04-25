@@ -11,7 +11,7 @@ const SalesCampaignBanner = () => {
                 <div className='flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-white'>
                     <div className='flex items-center gap-2'>
                         <span className='text-xl sm:text-2xl font-bold animate-bounce'>🔥</span>
-                        <div className='text-sm sm:text-base font-bold'>ФЛЭШ-САТЫЛЫМ АЯҚТАЛАДЫ:</div>
+                        <div className='text-sm sm:text-base font-bold'>ФЛЭШ-САТЫЛЫМ ОСЫ УАҚЫТТА АЯҚТАЛАДЫ:</div>
                         <div className='bg-white/20 rounded px-2 py-1 font-mono font-bold'>23:59:59</div>
                     </div>
 

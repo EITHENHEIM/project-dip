@@ -107,7 +107,7 @@ const Header = ({ user, categorySelector }: HeaderProps) => {
                                     Кіру
                                     </Link>
                                     <Link href='/auth/sign-up' className='text-xs sm:text-sm font-medium text-gray-700 hover:text-gray-900'>
-                                    Кіру
+                                    Тіркелу
                                     </Link>
                                 </React.Fragment>
                             )}

@@ -25,7 +25,7 @@ const SignUp = ({ action }: SignUpProps) => {
                 {/* Email */}
                 <div className='space-y-2'>
                     <label htmlFor='email' className='block text-sm font-medium text-gray-700'>
-                    Электрондық пошта
+                    Электрондық почта
                     </label>
                     <input
                         type='email'
@@ -34,7 +34,7 @@ const SignUp = ({ action }: SignUpProps) => {
                         autoComplete='email'
                         required
                         className='w-full px-4 py-3 border border-gray-200 rounded-md focus:ring-2 focus:ring-black focus:border-transparent transition-colors'
-                        placeholder='Enter your email'
+                        placeholder='Электрондық поштаңызды енгізіңіз'
                     />
                 </div>
 
@@ -50,7 +50,7 @@ const SignUp = ({ action }: SignUpProps) => {
                         autoComplete='new-password'
                         required
                         className='w-full px-4 py-3 border border-gray-200 rounded-md focus:ring-2 focus:ring-black focus:border-transparent transition-colors'
-                        placeholder='Create a password'
+                        placeholder='Құпиясөз құру'
                     />
                 </div>
 

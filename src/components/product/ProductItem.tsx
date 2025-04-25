@@ -11,7 +11,7 @@ const ProductItem = ({ product }: ProductItemProps) => {
   return (
     <div className='bg-white rounded-lg overflow-hidden relative'>
         <div className='absolute top-2 right-2 z-10'>
-            <span className='bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce'>ЫСТЫҚ!</span>
+            <span className='bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce'>HOT!</span>
         </div>
 
         <div className='relative h-48 w-full'>
