@@ -17,15 +17,15 @@ const SignIn = ({ action }: SignInProps) => {
 
     return (
         <Form action={formAction} className='max-w-md mx-auto my-16 p-8 bg-white rounded-lg shadow-md'>
-            <h1 className='text-2xl font-bold text-center mb-2'>Welcome Back!</h1>
-            <p className='text-center text-sm text-rose-600 font-semibold mb-2'>🔥 MEMBER EXCLUSIVE 🔥</p>
-            <p className='text-center text-sm text-gray-600 mb-6'>Sign in to access your exclusive member deals.</p>
+            <h1 className='text-2xl font-bold text-center mb-2'>Қош келдіңіз!</h1>
+            <p className='text-center text-sm text-rose-600 font-semibold mb-2'>🔥 ТІРКЕУЛІ МҮШЕЛЕРГЕ АРНАЛҒАН 🔥</p>
+            <p className='text-center text-sm text-gray-600 mb-6'>Тіркеліп, арнайы мүшелік ұсыныстарды алыңыз.</p>
 
             <div className='space-y-6'>
                 {/* Email */}
                 <div className='space-y-2'>
                     <label htmlFor='email' className='block text-sm font-medium text-gray-700'>
-                        Email address
+                    Электрондық почта
                     </label>
                     <input
                         type='email'
@@ -34,14 +34,14 @@ const SignIn = ({ action }: SignInProps) => {
                         autoComplete='email'
                         required
                         className='w-full px-4 py-3 border border-gray-200 rounded-md focus:ring-2 focus:ring-black focus:border-transparent transition-colors'
-                        placeholder='Enter your email'
+                        placeholder='Электрондық поштаңызды енгізіңіз'
                     />
                 </div>
 
                 {/* Password */}
                 <div className=''>
                     <label htmlFor='password' className='block text-sm font-medium text-gray-700'>
-                        Password
+                    Құпиясөз
                     </label>
                     <input
                         type='password'
@@ -56,8 +56,8 @@ const SignIn = ({ action }: SignInProps) => {
 
                 {/* Copywriting */}
                 <div className='text-center'>
-                    <p className='text-xs text-gray-500 mb-2'>⚡️ Members save an extra 15% on all orders!</p>
-                    <p className='text-xs text-gray-500 mb-4'>🛍️ Plug get free shipping on orders over $15.00</p>
+                    <p className='text-xs text-gray-500 mb-2'>⚡️ Мүшелер барлық тапсырыстардан қосымша 15% үнемдейді!</p>
+                    <p className='text-xs text-gray-500 mb-4'>🛍️ Плагин 5000 тенгеден асатын тапсырыстар үшін тегін жеткізуді алады</p>
                 </div>
 
                 {/* Submit Button */}
@@ -69,10 +69,10 @@ const SignIn = ({ action }: SignInProps) => {
                     {isPending ? (
                         <React.Fragment>
                             <Loader2 className='h-4 w-4 animate-spin' />
-                            SIGNING IN...
+                            Кіру...
                         </React.Fragment>
                     ) : (
-                        'SIGN IN'
+                        'Кіру'
                     )}
                 </button>
 

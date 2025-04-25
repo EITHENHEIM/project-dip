@@ -143,7 +143,7 @@ export const registerUser = async (email: string, password: string) => {
     } catch(e) {
         return {
             user: null,
-            error: "Failed to register user"
+            error: "Пайдаланушыны тіркеу сәтсіз аяқталды"
         }
     }
 }
@@ -158,7 +158,7 @@ export const loginUser = async (email: string, password: string) => {
     if(!user) {
         return {
             user: null,
-            error: "User not found",
+            error: "Пайдаланушы табылмады",
         }
     }
 
@@ -166,7 +166,7 @@ export const loginUser = async (email: string, password: string) => {
     if(!passwordValid) {
         return {
             user: null,
-            error: "Invalid password",
+            error: "Қате құпия сөз",
         }
     }
 

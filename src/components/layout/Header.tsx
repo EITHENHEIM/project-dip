@@ -12,7 +12,7 @@ const AnnouncementBar = () => {
     return (
         <div className='w-full bg-black py-2'>
             <div className='container mx-auto flex items-center justify-center px-8'>
-                <span className='text-center text-sm font-medium tracking-wide text-white'>FREE SHIPPING ON ORDERS OVER $15.00 • FREE RETURNS</span>
+                <span className='text-center text-sm font-medium tracking-wide text-white'>5000 ТЕНГЕДЕН АСАТЫН ТАПСЫРЫСТАР БОЙЫНША ТЕГІН ЖЕТКІЗУ • ТЕГІН ҚАЙТАРУЛАР</span>
             </div>
         </div>
     );
@@ -75,12 +75,12 @@ const Header = ({ user, categorySelector }: HeaderProps) => {
 
                             <nav className='hidden md:flex gap-4 lg:gap-6 text-sm font-medium'>
                                 {categorySelector}
-                                <Link href='#'>Sale</Link>
+                                <Link href='#'>Жеңілдіктер</Link>
                             </nav>
                         </div>
 
                         <Link href='#' className='absolute left-1/2 -translate-x-1/2'>
-                            <span className='text-xl sm:text-2xl font-bold tracking-tight'>DEAL</span>
+                            <span className='text-xl sm:text-2xl font-bold tracking-tight'>ҰСЫНЫС</span>
                         </Link>
 
                         <div className='flex flex-1 justify-end items-center gap-2 sm:gap-4'>
@@ -98,16 +98,16 @@ const Header = ({ user, categorySelector }: HeaderProps) => {
                                             router.refresh();
                                         }}
                                     >
-                                        Sign Out
+                                        Шығу
                                     </Link>
                                 </div>
                             ) : (
                                 <React.Fragment>
                                     <Link href='/auth/sign-in' className='text-xs sm:text-sm font-medium text-gray-700 hover:text-gray-900'>
-                                        Sign In
+                                    Кіру
                                     </Link>
                                     <Link href='/auth/sign-up' className='text-xs sm:text-sm font-medium text-gray-700 hover:text-gray-900'>
-                                        Sign Up
+                                    Кіру
                                     </Link>
                                 </React.Fragment>
                             )}

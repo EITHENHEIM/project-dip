@@ -11,7 +11,7 @@ const ProductItem = ({ product }: ProductItemProps) => {
   return (
     <div className='bg-white rounded-lg overflow-hidden relative'>
         <div className='absolute top-2 right-2 z-10'>
-            <span className='bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce'>HOT!</span>
+            <span className='bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce'>ЫСТЫҚ!</span>
         </div>
 
         <div className='relative h-48 w-full'>
@@ -38,15 +38,15 @@ const ProductItem = ({ product }: ProductItemProps) => {
     </span>
 </div>
                 <div className='text-xs text-green-500 font-semibold mb-2'>
-                    🔥 {100 + Math.abs(product._id.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0) % 500)}+ sold in last 24h
+                    🔥 {100 + Math.abs(product._id.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0) % 500)}+ соңғы 24 сағатта сатылды
                 </div>
                 <Link 
                     href={`/product/${product._id}`}
                     className='w-full text-center bg-gradient-to-r from-red-500 to-orange-500 text-white py-2 rounded-full text-sm font-bold hover:brightness-110 transition-all'
                 >
-                    GRAB IT NOW!
+                    ҚАЗІР АЛЫП ҮЛГЕРІНІЗ!
                 </Link>
-                <div className='text-xs text-red-500 text-center mt-1 animate-pulse'>⚡ Limited time offer!</div>
+                <div className='text-xs text-red-500 text-center mt-1 animate-pulse'>⚡ Шектеулі уақыт ұсынысы!</div>
             </div>
         </div>
     </div>

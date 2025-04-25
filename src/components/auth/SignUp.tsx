@@ -17,15 +17,15 @@ const SignUp = ({ action }: SignUpProps) => {
 
     return (
         <Form action={formAction} className='max-w-md mx-auto my-16 p-8 bg-white rounded-lg shadow-md'>
-            <h1 className='text-2xl font-bold text-center mb-2'>Join the DEAL Revolution!</h1>
-            <p className='text-center text-sm text-rose-600 font-semibold mb-2'>🔥 LIMITED TIME OFFER 🔥</p>
-            <p className='text-center text-sm text-gray-600 mb-6'>Sign up now and get 90% OFF your first order!</p>
+            <h1 className='text-2xl font-bold text-center mb-2'>DEAL революциясына қосылыңыз!</h1>
+            <p className='text-center text-sm text-rose-600 font-semibold mb-2'>🔥 ШЕКТЕУЛІ УАҚЫТТЫ ҰСЫНЫС 🔥</p>
+            <p className='text-center text-sm text-gray-600 mb-6'>Қазір тіркеліп, бірінші тапсырысыңыздан 90% жеңілдік алыңыз!</p>
 
             <div className='space-y-6'>
                 {/* Email */}
                 <div className='space-y-2'>
                     <label htmlFor='email' className='block text-sm font-medium text-gray-700'>
-                        Email address
+                    Электрондық пошта
                     </label>
                     <input
                         type='email'
@@ -41,7 +41,7 @@ const SignUp = ({ action }: SignUpProps) => {
                 {/* Password */}
                 <div className=''>
                     <label htmlFor='password' className='block text-sm font-medium text-gray-700'>
-                        Password
+                    Құпиясөз
                     </label>
                     <input
                         type='password'
@@ -56,8 +56,8 @@ const SignUp = ({ action }: SignUpProps) => {
 
                 {/* Copywriting */}
                 <div className='text-center'>
-                    <p className='text-xs text-gray-500 mb-2'>⚡️ Only 127 welcome bonus packages remaining!</p>
-                    <p className='text-xs text-gray-500 mb-4'>🕒 Offer expires in: 13:45</p>
+                    <p className='text-xs text-gray-500 mb-2'>⚡️ Қалған 127 сәлемдесу бонус пакеттері ғана бар!</p>
+                    <p className='text-xs text-gray-500 mb-4'>🕒 Ұсыныс аяқталады: 13:45</p>
                 </div>
 
                 {/* Submit Button */}
@@ -69,10 +69,10 @@ const SignUp = ({ action }: SignUpProps) => {
                     {isPending ? (
                         <React.Fragment>
                             <Loader2 className='h-4 w-4 animate-spin' />
-                            CREATING ACCOUNT...
+                            АККАУНТ ҚҰРУ...
                         </React.Fragment>
                     ) : (
-                        'CREATE ACCOUNT'
+                        'АККАУНТ ҚҰРУ'
                     )}
                 </button>
 
