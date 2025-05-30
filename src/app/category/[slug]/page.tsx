@@ -17,7 +17,7 @@ const CategoryPage = async ({ params }: CategoryPageProps) => {
 
             <div className='bg-red-50 p-4'>
                 <div className='container mx-auto'>
-                    <h1 className='text-2xl md:text-3xl font-bold text-center text-red-600 mb-2'>{category.title} - 90% дейін ЖЕҢІЛДІК! 🔥</h1>
+                    <h1 className='text-2xl md:text-3xl font-bold text-center text-red-600 mb-2'>{category.title} - 20% дейін ЖЕҢІЛДІК! 🔥</h1>
                     <p className='text-center text-red-500 text-sm md:text-base animate-pulse'>⚡️ Жылдам сатылым жақында аяқталады! ⏰ Тек қана шектеулі уақытқа</p>
                     <p className='text-center text-gray-600 text-xs mt-2'>{category.description}</p>
                 </div>

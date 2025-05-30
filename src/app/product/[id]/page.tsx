@@ -16,7 +16,7 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
         return <div>Товар табылмады</div>;
     }
 
-    const originalPrice = product.price * 5;
+    const originalPrice = product.price * 1.2;
 
   return (
     <div className='bg-gray-50'>
@@ -45,7 +45,7 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
         <div className='bg-gradient-to-r from-red-500/10 to-red-600/10 py-6 px-4'>
             <div className='container mx-auto'>
                 <h1 className='text-2xl md:text-4xl font-bold text-center text-red-600 mb-3'>
-                🔥 ЖЕҢІЛДІК – 80% 🔥
+                🔥 ЖЕҢІЛДІК – 20% 🔥
                 </h1>
                 <div className='flex flex-col items-center gap-2'>
                     <p className='text-center text-red-500 text-sm md:text-base font-semibold animate-pulse'>
@@ -120,10 +120,10 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
                                 </span>
                                 <div className='flex items-center gap-2'>
                                     <span className='bg-red-600 text-white px-2 py-0.5 rounded text-sm font-bold animate-pulse'>
-                                        -80%
+                                        -20%
                                     </span>
                                     <span className='text-red-600 font-bold text-sm'>
-                                    ҮЛКЕН ЖЕҢІЛДІК
+                                    ЖЕҢІЛДІК
                                     </span>
                                 </div>
                             </div>

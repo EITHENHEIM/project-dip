@@ -17,7 +17,7 @@ const SalesCampaignBanner = () => {
 
                     <div className='flex items-center gap-2'>
                         <span className='text-xl font-bold'>⚡</span>
-                        <span className='font-bold text-yellow-200 animate-pulse'>95% ДЕЙІН ЖЕҢІЛДІК!</span>
+                        <span className='font-bold text-yellow-200 animate-pulse'>20% ЖЕҢІЛДІК!</span>
                     </div>
 
                     <button
@@ -26,7 +26,7 @@ const SalesCampaignBanner = () => {
                             router.push('/');
                         }}
                     >
-                        ҚАЗІР САТЫП АЛЫҢЫЗ!
+                        АЛЫП ҮЛГЕРІҢІЗ!
                     </button>
                 </div>
             </div>

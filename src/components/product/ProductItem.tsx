@@ -44,7 +44,7 @@ const ProductItem = ({ product }: ProductItemProps) => {
                     href={`/product/${product._id}`}
                     className='w-full text-center bg-gradient-to-r from-red-500 to-orange-500 text-white py-2 rounded-full text-sm font-bold hover:brightness-110 transition-all'
                 >
-                    ҚАЗІР АЛЫП ҮЛГЕРІНІЗ!
+                    АЛЫП ҮЛГЕРІНІЗ!
                 </Link>
                 <div className='text-xs text-red-500 text-center mt-1 animate-pulse'>⚡ Шектеулі уақыт ұсынысы!</div>
             </div>
