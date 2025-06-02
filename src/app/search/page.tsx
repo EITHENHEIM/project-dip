@@ -18,7 +18,7 @@ const SearchPage = async ({ searchParams }: SearchPageProps) => {
             <div className='bg-red-50 p-4'>
                 <div className='container mx-auto'>
                     <h1 className='text-2xl md:text-3xl font-bold text-center text-red-600 mb-2'>
-                    &quot;{query}&quot; бойынша іздеу нәтижелері - 90%-ға дейін жеңілдік! 🔥
+                    &quot;{query}&quot; бойынша іздеу нәтижелері - 20%-ға дейін жеңілдік! 🔥
                     </h1>
                     <p className='text-center text-red-500 text-sm md:text-base animate-pulse'>
                     ⚡️ Жылдам сатылым жақында аяқталады! ⏰ Шектеулі уақыт ішінде ғана

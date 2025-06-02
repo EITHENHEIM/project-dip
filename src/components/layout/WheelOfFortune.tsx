@@ -230,7 +230,7 @@ const PriceTag = ({price}: { price: number }) => {
     return (
         <div className='flex items-center'>
             <span className='text-white text-base font-extrabold drop-shadow-lg [text-shadow:_-2px_-2px_0_#22c55e,_2px_-2px_0_#22c55e,-2px_2px_0_#22c55e,_2px_2px_0_#22c55e]'>
-                ${price.toFixed(2)}
+                {price.toFixed(2)}₸
             </span>
         </div>
     )
@@ -355,7 +355,7 @@ const WheelOfFortune = ({ products, winningIndex }: WheelOfFortuneProps) => {
                                             {product.title}
                                         </span>
                                         <PriceTag
-                                            price={(product.price || 0) * 5}
+                                            price={(product.price || 0) * 1.2}
                                         />
                                     </div>
                                 </div>

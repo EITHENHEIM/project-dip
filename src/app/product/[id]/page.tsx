@@ -167,6 +167,13 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> } ) => 
                             <span className='bg-green-100 p-2 rounded-full'>🛡️</span>
                             <span className='font-medium'>Қауіпсіз төлем өңдеу</span>
                         </div>
+                        <div className='flex items-center gap-3 text-gray-700 mt-4'>
+    <span className='bg-blue-100 p-2 rounded-full'>📞</span>
+    <span className='font-medium'>
+      Кеңес алу үшін мына номерге хабарласыңыз: <a href='tel:+77001234567' className='text-blue-600 underline'>+7 747 365 06 58</a> немесе
+      по электронной почте: <a href='mailto:info@example.com' className='text-blue-600 underline'>dia.kudaibergen@aues.kz</a>
+    </span>
+  </div>
                     </div>
                 </div>
             </div>

@@ -41,7 +41,7 @@ export const createCheckoutSession = async (cartId: string) => {
             userId: user?.id?.toString() || '-'
         },
         shipping_address_collection: {
-            allowed_countries: ['US','KZ','RU']
+            allowed_countries: ['KZ']
         },
         shipping_options: [
             {
@@ -49,9 +49,9 @@ export const createCheckoutSession = async (cartId: string) => {
                     type: 'fixed_amount',
                     fixed_amount: {
                         currency: 'kzt',
-                        amount: totalPrice >= 5000 ? 0 : 1500 * 100
+                        amount: totalPrice >= 50000 ? 0 : 1500 * 100
                     },
-                    display_name: totalPrice >= 5000 ? 'Free Shipping' : 'Shipping',
+                    display_name: totalPrice >= 50000 ? 'Free Shipping' : 'Shipping',
                     delivery_estimate: {
                         minimum: {
                             unit: 'business_day',
